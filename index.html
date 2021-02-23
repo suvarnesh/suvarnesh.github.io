@@ -10,6 +10,41 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <style>
+  header:hover{
+	opacity: 1;
+	background: var(--main-header-background);
+}
+
+.logo img{
+	padding-top: 5px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.nav-bar{
+	list-style:none;
+	position: relative;
+	display: inline-flex;
+}
+
+a.nav-link{
+	margin: 2px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--main-fonts-color);
+	font-family: var(--main-font-family);
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.active{
+	background: var(--main-decor-color);
+}
+
+.nav-link:hover {
+	color: #000000;
+    background: var(--main-decor-color);
+}
   body {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
@@ -24,10 +59,13 @@ body, html {height: 100%}
 }
 </style>
 <body>
+	<header>
 
 <header class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <a href="https://hackclub.com/" target="_blank"><img width="150px" height="100px" src="../images/flag-hackclub.png"></a>
+    		<a class="logo" href="">
+              <img src="images/flag-hackclub.png" alt="repl logo" />
+		</a>
   </div>
   <div class="w3-display-middle">
     <img src="../images/img.svg" class="img-fluid w3-jumbo w3-animate-top" alt="Background image">
