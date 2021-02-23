@@ -419,6 +419,127 @@ hr {
 .nav-active{
 	transform:translatex(0%);
 }
+
+  
+   /* add css code*/
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'raleway',sans-serif;
+    font-weight: bold;
+}*/
+#mybutton {
+    position: relative;
+    display: inline-block;
+    padding: 30px 50px;
+    margin: 90px 0;
+    color: #00a9e2;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 50px;
+}
+/* link Hover effect*/
+#mybutton:hover{
+background: #00a9e2;
+color: #050801;
+box-shadow: 0 0 5px #00a9e2,
+            0 0 25px #00a9e2,
+            0 0 50px #00a9e2,
+            0 0 200px #00a9e2;
+-webkit-box-reflect:below 1px linear-gradient(transition, #0005)            
+}
+/* add animation */
+
+#mybutton:nth-child(2){
+    filter: hue-rotate(270deg);
+}
+#mybutton span{
+    position: absolute;
+    display: block;
+}
+#mybutton span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#00a9e2);
+    animation: animate1 1s linear infinite;
+}
+/* add keyframes for animation*/
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+/* 2nd line animation*/
+#mybutton span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#00a9e2);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+/* add keyframes*/
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+/* 3rd line animation*/
+
+#mybutton span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width:100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#00a9e2);
+    animation: animate3 1s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+/* 4th line animation*/
+#mybutton span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#00a9e2);
+    animation: animate4 1s linear infinite;
+    animation-delay:0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
       </style>
   </head>
     <body>
@@ -433,7 +554,7 @@ hr {
 		<nav>	
 		 <ul class="nav-bar"><div class="bg"></div>
 			<li><a class="nav-link active" href="#home">Home</a></li>
-			<li><a class="nav-link" href="#projects">Portfolio</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
 			<li><a class="nav-link" href="#contact">Contact</a></li>
 		 </ul>
 			
@@ -470,22 +591,14 @@ hr {
 		  <p>Check Some Projects.</p>
 		  <div class="work-box">
 		  <div class="work">
-		<!--───────────────card───────────────-->
-			<div class="card">
-			    <img class="work-img" src="images/suvarnesh-portfolio.jpg">
-			    <a href="https://suvarnesh.github.io/portfolio/suvarnesh.html" target="_blank"> <!--Link to project-->
-				<div class="work-content">suvarnesh.</div></a>
-            </div>
-			<div class="card">
-			    <img class="work-img" src="images/athul-portfolio.jpg">
-				<a href="https://suvarnesh.github.io/portfolio/athul.html" target="_blank"> <!--Link to project-->
-				<div class="work-content">athul.</div></a>
-            </div>
-            <div class="card">
-			    <img class="work-img" src="images/portfolio-portfolio.jpg">
-				<a href="https://suvarnesh.github.io/portfolio/portfolio.html" target="_blank"> <!--Link to project-->
-				<div class="work-content">portfolio.</div></a>
-            </div>
+      <a id="mybutton" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Portfolio
+    </a>
+
 		  </div>
 		  </div>
 	  </div>
