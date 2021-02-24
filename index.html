@@ -420,126 +420,26 @@ hr {
 	transform:translatex(0%);
 }
 
+    /* styling the button*/
+#mybutton { 
+        padding: 15px 15px; 
+        display: inline-block; 
+        color: #00a9e2; 
+        letter-spacing: 2px; 
+        text-transform: uppercase; 
+        text-decoration: none; 
+        font-size: 3em; 
+        overflow: hidden; 
+    } 
   
-   /* add css code*/
-/**{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #050801;
-    font-family: 'raleway',sans-serif;
-    font-weight: bold;
-}*/
-#mybutton {
-    position: relative;
-    display: inline-block;
-    padding: 30px 50px;
-    margin: 90px 0;
-    color: #00a9e2;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    overflow: hidden;
-    margin-right: 50px;
-}
-/* link Hover effect*/
-#mybutton:hover{
-background: #00a9e2;
-color: #050801;
-box-shadow: 0 0 5px #00a9e2,
-            0 0 25px #00a9e2,
-            0 0 50px #00a9e2,
-            0 0 200px #00a9e2;
--webkit-box-reflect:below 1px linear-gradient(transition, #0005)            
-}
-/* add animation */
-
-#mybutton:nth-child(2){
-    filter: hue-rotate(270deg);
-}
-#mybutton span{
-    position: absolute;
-    display: block;
-}
-#mybutton span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#00a9e2);
-    animation: animate1 1s linear infinite;
-}
-/* add keyframes for animation*/
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
-/* 2nd line animation*/
-#mybutton span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#00a9e2);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
-}
-/* add keyframes*/
-@keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
-}
-/* 3rd line animation*/
-
-#mybutton span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width:100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#00a9e2);
-    animation: animate3 1s linear infinite;
-}
-@keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
-}
-/* 4th line animation*/
-#mybutton span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#00a9e2);
-    animation: animate4 1s linear infinite;
-    animation-delay:0.75s;
-}
-@keyframes animate4{
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
-}
-
+    /*creating animation effect*/
+#mybutton:hover { 
+        color: #111; 
+        background: #00a9e2; 
+        box-shadow: 0 0 50px #00a9e2; 
+    } 
+  
+ 
       </style>
   </head>
     <body>
@@ -589,15 +489,19 @@ box-shadow: 0 0 5px #00a9e2,
 	  <div id="projects"> 
 		 <h3>Projects.<hr></h3>
 		  <p>Check Some Projects.</p>
-		  <div class="work-box">
+ <div class="work-box">
 		  <div class="work">
-      <a id="mybutton" href="/portfolio">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Portfolio
-    </a>
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="">
+			    <a href="/portfolio" target="_blank"> <!--Link to project-->
+				<div class="work-content">Portfolio.</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="">
+				<a href="/todo" target="_blank"> <!--Link to project-->
+				<div class="work-content">ToDo.</div></a>
+            </div>
 
 		  </div>
 		  </div>
