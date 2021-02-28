@@ -8,27 +8,27 @@
       <link rel="icon" href="images/flag-hackclub.png">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <style type="text/css">
-      	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
-	--main-background: #0b0c0f;
-	--main-fonts-color: #fff;
-	--main-decor-color:#00a9e2;
+    --main-background: #0b0c0f;
+    --main-fonts-color: #fff;
+    --main-decor-color:#00a9e2;
     --main-header-background:#0b0c0f;
-	--main-font-family: 'Poppins', sans-serif;
+    --main-font-family: 'Poppins', sans-serif;
 }
 
 *{
-	margin: 0;
-	padding: 0;
-	scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 main{
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	background: var(--main-background);
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-background);
 }
 
 /*────────────────── 
@@ -36,55 +36,56 @@ main{
 ──────────────────*/
 
 header{
-	margin: 0 auto;
-	width: 100%;
-	height: 70px;
-	display: flex;
+	font-family: var(--main-font-family);
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    display: flex;
     align-items: center; 
-	justify-content: space-around; 
+    justify-content: space-around; 
     background: transparent;
-	position: fixed;
-	top: 0;
-	transition: 0.3s;
-	z-index: 5;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    z-index: 5;
 }
 .nav-show{
-	opacity: 0;
+    opacity: 0;
 }
 
 header:hover{
-	opacity: 1;
-	background: var(--main-header-background);
+    opacity: 1;
+    background: var(--main-header-background);
 }
 
 .logo img{
-	padding-top: 5px;
-	height: 50px;
-	cursor: pointer;
+    padding-top: 5px;
+    height: 50px;
+    cursor: pointer;
 }
 
 .nav-bar{
-	list-style:none;
-	position: relative;
-	display: inline-flex;
+    list-style:none;
+    position: relative;
+    display: inline-flex;
 }
 
 a.nav-link{
-	margin: 2px;
-	padding: 5px 10px;
-	text-decoration: none;
-	color: var(--main-fonts-color);
-	font-family: var(--main-font-family);
-	cursor: pointer;
-	text-transform: uppercase;
+    margin: 2px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .active{
-	background: var(--main-decor-color);
+    background: var(--main-decor-color);
 }
 
 .nav-link:hover {
-	color: #000000;
+    color: #000000;
     background: var(--main-decor-color);
 }
 
@@ -92,51 +93,51 @@ a.nav-link{
        home
 ──────────────────*/
 
-#home{ 	
-	margin: auto;
-	height: 100vh;
-	color: var(--main-fonts-color);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
+#home{  
+    margin: auto;
+    height: 100vh;
+    color: var(--main-fonts-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #home .filter{
-	background: url('https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1190&q=80') no-repeat;
-	background-size: cover;
-	background-position:center;
+    background: url('https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1190&q=80') no-repeat;
+    background-size: cover;
+    background-position:center;
     position: absolute;
     top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
-	opacity:.20;
+    opacity:.20;
 }  
 
 .intro {
-	text-align:center;
+    text-align:center;
     color: var(--main-fonts-color);
-	z-index: 1;
-	margin: auto;
-	padding: 20px;
+    z-index: 1;
+    margin: auto;
+    padding: 20px;
 }
 
 .intro  p{
     margin: 5px;
-	font-size:1.2rem;
-	font-family: var(--main-font-family);
-	text-align:center;
+    font-size:1.2rem;
+    font-family: var(--main-font-family);
+    text-align:center;
 }
 
  h3{
-	padding-bottom: 15px;
+    padding-bottom: 15px;
     letter-spacing: normal;
     font-family: var(--main-font-family);
-	font-style: normal;
-	font-size: 60px;
-	color: var(--main-fonts-color);
-	text-shadow: 0px 0px 40px var(--main-decor-color);
+    font-style: normal;
+    font-size: 60px;
+    color: var(--main-fonts-color);
+    text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
 
@@ -145,11 +146,11 @@ a.nav-link{
 ──────────────────*/
 
 .social-media{
-	padding: 10px;
-	display: flex;
-	position: center;
+    padding: 10px;
+    display: flex;
+    position: center;
     align-items: space-around;
-	justify-content:center;
+    justify-content:center;
 }
 
 .social-media a {
@@ -157,16 +158,16 @@ a.nav-link{
     font-size: 2rem;
     text-align:center;
     display: inline-block;
-	color: var(--main-fonts-color);
+    color: var(--main-fonts-color);
 }
 
 .social-media a i{
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .social-media  a:hover {
-	color: var(--main-decor-color);
-	text-shadow: 0 0 50px var(--main-decor-color);
+    color: var(--main-decor-color);
+    text-shadow: 0 0 50px var(--main-decor-color);
 }
 
 /*──────────────────
@@ -174,60 +175,60 @@ a.nav-link{
 ──────────────────*/
 
 #projects{
-	margin-top:100px;
+    margin-top:100px;
     height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-	text-align:center;
-	color: var(--main-fonts-color);
+    text-align:center;
+    color: var(--main-fonts-color);
 }
 #projects h3{
     padding-top: 70px;
 }
 #projects p{
-	font-family: var(--main-font-family);
-	font-size:1.2rem;
-	padding: 10px;
+    font-family: var(--main-font-family);
+    font-size:1.2rem;
+    padding: 10px;
 }
 
 .work{
-	display: flex; 
-	flex: 1;
+    display: flex; 
+    flex: 1;
     flex-wrap: wrap;
     justify-content:center;
-	align-items: center;
-	padding: 20px;
+    align-items: center;
+    padding: 20px;
 }
 
 .card{
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	width: 200px;
-	height:250px;
-	border-radius:12px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 200px;
+    height:250px;
+    border-radius:12px;
     background:var(--main-decor-color);
 }
 
 .card img{
-	width: 100%;
-	height:70%;
-	border-radius:10px 10px 0px 0px;
+    width: 100%;
+    height:70%;
+    border-radius:10px 10px 0px 0px;
 }
 
 .card .work-content{
-	text-align: center;
-	padding: 10px 5px;
-	font-size: 1rem;
-	color: var(--main-fonts-color);
-	font-family: var(--main-font-family);
-	cursor: pointer;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1rem;
+    color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    cursor: pointer;
 }
 
 .card a{
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .card .work-content:hover{
@@ -235,7 +236,7 @@ a.nav-link{
 }
 
 .card:hover{
-	box-shadow: 0 0 1.5rem gray;
+    box-shadow: 0 0 1.5rem gray;
 }
 
 /*──────────────────
@@ -243,21 +244,21 @@ a.nav-link{
 ──────────────────*/
 
 #contact{
-	margin: auto;
-	padding-bottom: 20px;
-	height: 600px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color: var(--main-fonts-color);
+    margin: auto;
+    padding-bottom: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-fonts-color);
 }
-	
+    
 #contact p{
-	padding:10px;
-	text-align:center;
-	font-size:1.2rem;
-	font-family: var(--main-font-family);
+    padding:10px;
+    text-align:center;
+    font-size:1.2rem;
+    font-family: var(--main-font-family);
 }
 
 /*────────────────── 
@@ -265,39 +266,41 @@ a.nav-link{
 ──────────────────*/
 
 footer {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
     background-color: var(--main-header-background);
+    font-family: var(--main-font-family);
+
 }
 
 .copyright {
-	color: #fff;
-	font-size: 1.2rem;
-	line-height: 40px;
-	text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: center;
 }
 
 .copyright a{
-	color: #fff;
-	font-size: 1rem;
-	letter-spacing: 1px;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
 .copyright a:hover{
-	color: var(--main-decor-color);
+    color: var(--main-decor-color);
 }
 
 /*──── hr ─────*/
 
 hr {
     background: var(--main-decor-color);
-	margin: 2px;
-	height: 3px;
-	width: 150px;
+    margin: 2px;
+    height: 3px;
+    width: 150px;
     border-radius:5px;
-	border: hidden;
-	margin-inline-start: auto;
+    border: hidden;
+    margin-inline-start: auto;
     margin-inline-end: auto;
 }
 
@@ -306,54 +309,54 @@ hr {
 ──────────────────*/
 ::-webkit-Scrollbar{
     width: 5px; 
-	background: rgba(5,5,5,1);
+    background: rgba(5,5,5,1);
 }
 ::-webkit-Scrollbar-thumb{
-	border-radius: 10px;
-	background: var(--main-decor-color);
-	box-shadow: inset 0 0 20px var(--main-decor-color);
+    border-radius: 10px;
+    background: var(--main-decor-color);
+    box-shadow: inset 0 0 20px var(--main-decor-color);
 }
 ::-webkit-Scrollbar-track{
-	margin-top: 80px;
-	border-radius: 10px;
+    margin-top: 80px;
+    border-radius: 10px;
 }
 
 /*────────────────── 
      hamburger
 ──────────────────*/
 .hamburger {
-	display: none;
+    display: none;
 }
 
 .hamburger div{
-	width: 30px;
-	height: 3px;
-	background: #dbdbdb;
-	margin: 5px;
-	transition:all 0.3s ease;
+    width: 30px;
+    height: 3px;
+    background: #dbdbdb;
+    margin: 5px;
+    transition:all 0.3s ease;
 }
 
 .toggle .line1{
-	transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-5px,6px);
 }
 
 .toggle .line2{
-	opacity: 0;
+    opacity: 0;
 }
 
 .toggle .line3{
-	transform: rotate(45deg) translate(-5px,-6px);
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 
 @keyframes navLinkFade{
-	from{
-		opacity:0;
-		transform: translatex(50px);
-	}
-	to{
-		opacity: 1;
-		transform:translatex(0px);
-	}
+    from{
+        opacity:0;
+        transform: translatex(50px);
+    }
+    to{
+        opacity: 1;
+        transform:translatex(0px);
+    }
 }
 
 /*────────────────── 
@@ -361,12 +364,12 @@ hr {
 ──────────────────*/
 
 @media only screen and (max-width: 1484px) and (min-width: 1214px) {
-	.work{
+    .work{
         padding:20px 20%;
     }
 }
 @media only screen and (max-width: 1214px) and (min-width: 1000px) {
-	.work{
+    .work{
         padding:20px 12%;
     }
 }
@@ -374,50 +377,50 @@ hr {
 
 @media only screen and (max-width: 500px) {
 
-	#home, #projects, #contact{
+    #home, #projects, #contact{
         overflow-x: hidden;
-	}
-	header{
-		background-color: var(--main-header-background);
-	}
-	.logo{
-		position:absolute;
-		top: 2px;
-		left: 30px;
-	}
-	.nav-show{
-		opacity: 1;
-	}	 
-	.nav-bar{
-		position:fixed;
-		top: 0px;
-		right:0;
-		width:60%;
-		height: 100vh;
-		display:flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content:space-evenly;
-		background:var(--main-header-background);
-		transform:translatex(100%);
-		transition: transform 0.5s ease-in;
-		z-index: -1;
-	}
-	.hamburger{
-		position:absolute;
-		top: 17px;
-		right: 25%;
-		display: block;
-		cursor:pointer;
-		z-index: 5;
-	}	
-	.nav-bar li{
-		opacity:0;
-	}
+    }
+    header{
+        background-color: var(--main-header-background);
+    }
+    .logo{
+        position:absolute;
+        top: 2px;
+        left: 30px;
+    }
+    .nav-show{
+        opacity: 1;
+    }    
+    .nav-bar{
+        position:fixed;
+        top: 0px;
+        right:0;
+        width:60%;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        background:var(--main-header-background);
+        transform:translatex(100%);
+        transition: transform 0.5s ease-in;
+        z-index: -1;
+    }
+    .hamburger{
+        position:absolute;
+        top: 17px;
+        right: 25%;
+        display: block;
+        cursor:pointer;
+        z-index: 5;
+    }   
+    .nav-bar li{
+        opacity:0;
+    }
 }
 
 .nav-active{
-	transform:translatex(0%);
+    transform:translatex(0%);
 }
 
     /* styling the button*/
@@ -440,6 +443,80 @@ hr {
     } 
   
 
+            </style>
+            <header class="css-1c45a68">
+                <style data-emotion-css="1q6lkg">
+                    .css-1q6lkg {
+                    	font-family: var(--main-font-family);
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        position: relative;
+                        z-index: 2;
+                        padding-left: 16px;
+                    }
+
+                    @media (min-width: 64emem) {
+                        .css-1q6lkg {
+                            padding:0 32px;
+                        }
+                    }
+                </style>
+                <style data-emotion-css="1ugdwt4">
+                    .css-1ugdwt4 {
+                        box-sizing: border-box;
+                        margin: 0;
+                        min-width: 0;
+                        width: 100%;
+                        max-width: container;
+                        margin-left: auto;
+                        margin-right: auto;
+                        max-width: 1024px;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-left: 16px;
+                        padding-right: 16px;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        position: relative;
+                        z-index: 2;
+                        padding-left: 16px;
+                    }
+
+                    @media screen and (min-width: 48em) {
+                        .css-1ugdwt4 {
+                            max-width:1200px;
+                        }
+                    }
+
+                    @media (min-width: 64emem) {
+                        .css-1ugdwt4 {
+                            padding:0 32px;
+                        }
+                    }
+                </style>
+                <div class="css-1ugdwt4">
+                    <style data-emotion-css="77r3sa animation-472zo1">
                         .css-77r3sa {
                             background-image: url(https://assets.hackclub.com/flag-orpheus-top.svg);
                             background-repeat: no-repeat;
@@ -505,135 +582,346 @@ hr {
                                 transform: rotate(-5deg);
                             }
                         }
+                    </style>
+                    <a href="https://cucek.hackclub.com/" title="Homepage" class="css-77r3sa"></a>
+                    <style data-emotion-css="q7t8rc">
+                        .css-q7t8rc {
+                            box-sizing: border-box;
+                            margin: 0;
+                            min-width: 0;
+                            color: var(--theme-ui-colors-white,#ffffff);
+                            display: none;
+                        }
 
- 
+                        @media (min-width: 56em) {
+                            .css-q7t8rc {
+                                display:-webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                position: absolute;
+                                left: 50%;
+                                -webkit-transform: translateX(-50%);
+                                -ms-transform: translateX(-50%);
+                                transform: translateX(-50%);
+                            }
+                        }
+
+                        .css-q7t8rc a {
+                            font-size: 16px;
+                            text-transform: uppercase;
+                        }
+
+                        .css-q7t8rc a:hover {
+                            color: #e0e6ed;
+                        }
+
+                        .css-q7t8rc a {
+                            margin-left: 16px;
+                            padding: 16px;
+                            -webkit-text-decoration: none;
+                            text-decoration: none;
+                        }
+
+                        @media (min-width: 56em) {
+                            .css-q7t8rc a {
+                                color:#ffffff;
+                            }
+                        }
+                    </style>
+                    <nav role="navigation" aria-hidden="false" class="css-q7t8rc">
+                        <style data-emotion-css="1y45uqi">
+                            .css-1y45uqi {
+                                box-sizing: border-box;
+                                margin: 0;
+                                min-width: 0;
+                                color: var(--theme-ui-colors-primary,#ec3750);
+                                -webkit-text-decoration: underline;
+                                text-decoration: underline;
+                                text-underline-position: under;
+                            }
+
+                            .css-1y45uqi:focus,.css-1y45uqi:hover {
+                                -webkit-text-decoration-style: wavy;
+                                text-decoration-style: wavy;
+                            }
+                        </style>
+                        <a href="#home" class="css-1y45uqi">Home</a>
+                        <a href="#projects" class="css-1y45uqi">Projects</a>
+                        <a href="#contact" class="css-1y45uqi">Contact</a>
+                    </nav>
+                    <style data-emotion-css="kwno9m">
+                        .css-kwno9m {
+                            box-sizing: border-box;
+                            margin: 0;
+                            min-width: 0;
+                            color: var(--theme-ui-colors-white,#ffffff);
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: center;
+                            -webkit-justify-content: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            min-width: 64px;
+                            min-height: 44px;
+                            cursor: pointer;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            margin-left: auto;
+                        }
+
+                        @media (min-width: 56em) {
+                            .css-kwno9m {
+                                display:none;
+                            }
+                        }
+                    </style>
+                    <div class="css-kwno9m">
+                        <svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="menu" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
+                            <g>
+                                <path d="M9,10c0,-0.552 0.448,-1 1,-1l12,0c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1l-12,0c-0.552,0 -1,-0.448 -1,-1Z"></path>
+                                <path d="M9,15c0,-0.552 0.448,-1 1,-1l12,0c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1l-12,0c-0.552,0 -1,-0.448 -1,-1Z"></path>
+                                <path d="M9,20c0,-0.552 0.448,-1 1,-1l12,0c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1l-12,0c-0.552,0 -1,-0.448 -1,-1Z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <style data-emotion-css="h2sf5m animation-1bg9s6n">
+                    .css-h2sf5m {
+                        box-sizing: border-box;
+                        margin: 0;
+                        min-width: 0;
+                        color: var(--theme-ui-colors-white,#ffffff);
+                        display: none;
+                        display: none;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        overflow-y: auto;
+                        text-align: left;
+                        height: 100vh;
+                    }
+
+                    @media (prefers-reduced-motion:no-preference) {
+                        .css-h2sf5m {
+                            -webkit-animation: animation-1bg9s6n 0.25s ease-in;
+                            animation: animation-1bg9s6n 0.25s ease-in;
+                        }
+                    }
+
+                    .css-h2sf5m a {
+                        color: #1f2d3d !important;
+                        margin: 0 auto;
+                        height: 64px;
+                        font-weight: bold;
+                        font-size: 20px;
+                        width: 100%;
+                        max-width: 18rem;
+                    }
+
+                    .css-h2sf5m a:not(:last-child) {
+                        border-bottom: 1px solid rgba(48,48,48,0.125);
+                    }
+
+                    @media screen and (max-width: 22em) {
+                        .css-h2sf5m a {
+                            max-width:16rem;
+                        }
+                    }
+
+                    .css-h2sf5m a {
+                        margin-left: 16px;
+                        padding: 16px;
+                        -webkit-text-decoration: none;
+                        text-decoration: none;
+                    }
+
+                    @media (min-width: 56em) {
+                        .css-h2sf5m a {
+                            color:#ffffff;
+                        }
+                    }
+
+                    @-webkit-keyframes animation-1bg9s6n {
+                        from {
+                            -webkit-transform: translateY(-25%);
+                            -ms-transform: translateY(-25%);
+                            transform: translateY(-25%);
+                            opacity: 0;
+                        }
+
+                        to {
+                            -webkit-transform: translateY(0);
+                            -ms-transform: translateY(0);
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+
+                    @keyframes animation-1bg9s6n {
+                        from {
+                            -webkit-transform: translateY(-25%);
+                            -ms-transform: translateY(-25%);
+                            transform: translateY(-25%);
+                            opacity: 0;
+                        }
+
+                        to {
+                            -webkit-transform: translateY(0);
+                            -ms-transform: translateY(0);
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                </style>
+                <nav role="navigation" aria-hidden="true" class="css-h2sf5m">
+                        <a href="#home" class="css-1y45uqi">Home</a>
+                        <a href="#projects" class="css-1y45uqi">Projects</a>
+                        <a href="#contact" class="css-1y45uqi">Contact</a>
+                </nav>
+            </header>
+
       </style>
   </head>
     <body>
-	  
+      
         <div class="container">
-	  
-		<!--────────────────Header───────────────-->
-	<header>
-		<a class="css-77r3sa" href="">
-		</a>
-		<nav>	
-		 <ul class="nav-bar">
-		 	<!-- <div class="bg"></div> -->
-			<li><a class="nav-link active" href="#home">Home</a></li>
-			<li><a class="nav-link" href="#projects">Projects</a></li>
-			<li><a class="nav-link" href="#contact">Contact</a></li>
-		 </ul>
-			
-			<div class="hamburger">
-				<div class="line1"></div>
-            <div class="line2"></div>
-				<div class="line3"></div>
+      
+        <!--────────────────Header───────────────-->
+
+<header class="css-1c45a68">
+	<div class="css-1ugdwt4">
+		<a href="https://hackclub.com/" title="Homepage" class="css-77r3sa"></a>
+		<nav role="navigation" aria-hidden="true" class="css-q7t8rc">
+                        <a href="#home" class="css-1y45uqi">Home</a>
+                        <a href="#projects" class="css-1y45uqi">Projects</a>
+                        <a href="#contact" class="css-1y45uqi">Contact</a>
+		</nav>
+			<div class="css-kwno9m">
+				<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="menu" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="32" height="32">
+					<g><path d="M9,10c0,-0.552 0.448,-1 1,-1l12,0c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1l-12,0c-0.552,0 -1,-0.448 -1,-1Z"></path>
+						<path d="M9,15c0,-0.552 0.448,-1 1,-1l12,0c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1l-12,0c-0.552,0 -1,-0.448 -1,-1Z"></path>
+						<path d="M9,20c0,-0.552 0.448,-1 1,-1l12,0c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1l-12,0c-0.552,0 -1,-0.448 -1,-1Z"></path>
+					</g>
+				</svg>
 			</div>
+		</div>
+		<nav role="navigation" aria-hidden="false" class="css-h2sf5m">
+                        <a href="#home" class="css-1y45uqi">Home</a>
+                        <a href="#projects" class="css-1y45uqi">Projects</a>
+                        <a href="#contact" class="css-1y45uqi">Contact</a>
 		</nav>
 	</header>
-	<main>
-		<!--─────────────────Home────────────────-->
-	  <div id="home">
-		 <div class="filter"></div>
-		 <section class="intro">
-		  <h3>Explore.<hr></h3>
-		  <p>Explore the world of open source.</p>
-		  <p>Contribute to open source.</p>
-		  <!--────social media links─────-->
-			 
-		  <div class="social-media">
-			  <a href="https://www.instagram.com/programmermecucek/" target="_blank"><i class='fab fa-instagram'></i></a>
-			  <a href="https://twitter.com/hackclubcucek" target="_blank"><i class='fab fa-twitter'></i></a>
-			  <a href="https://github.com/hackclub-cucek" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="https://www.youtube.com/channel/UClkbYSxkA7kATU6JQx00d3g" target="_blank"><i class="fab fa-youtube"></i></a>
-		    </div>
-			 
-		 </section> 
-	  </div>  
-		
-	  <!--───────────────Projects───────────────-->
-	  <div id="projects"> 
-		 <h3>Projects.<hr></h3>
-		  <p>Check Some Projects.</p>
+    <main>
+        <!--─────────────────Home────────────────-->
+      <div id="home">
+         <div class="filter"></div>
+         <section class="intro">
+          <h3>Explore.<hr></h3>
+          <p>Explore the world of open source.</p>
+          <p>Contribute to open source.</p>
+          <!--────social media links─────-->
+             
+          <div class="social-media">
+              <a href="https://www.instagram.com/programmermecucek/" target="_blank"><i class='fab fa-instagram'></i></a>
+              <a href="https://twitter.com/hackclubcucek" target="_blank"><i class='fab fa-twitter'></i></a>
+              <a href="https://github.com/hackclub-cucek" target="_blank"><i class='fab fa-github'></i></a>
+              <a href="https://www.youtube.com/channel/UClkbYSxkA7kATU6JQx00d3g" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+             
+         </section> 
+      </div>  
+        
+      <!--───────────────Projects───────────────-->
+      <div id="projects"> 
+         <h3>Projects.<hr></h3>
+          <p>Check Some Projects.</p>
  <div class="work-box">
-		  <div class="work">
-		<!--───────────────card───────────────-->
+          <div class="work">
+        <!--───────────────card───────────────-->
 
-			<div class="card">
-				<a href="/portfolio">
-					<img class="work-img" src="https://images.unsplash.com/photo-1545665277-5937489579f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+            <div class="card">
+                <a href="/portfolio">
+                    <img class="work-img" src="https://images.unsplash.com/photo-1545665277-5937489579f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
 
-					<h2 style="font-size: 30px"  class="work-content">Portfolio.</h2>
-				</a>
+                    <h2 style="font-size: 30px"  class="work-content">Portfolio.</h2>
+                </a>
             </div>
 
-			<div class="card">
-				<a href="/todo">
-					<img class="work-img" src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
+            <div class="card">
+                <a href="/todo">
+                    <img class="work-img" src="https://images.unsplash.com/photo-1540350394557-8d14678e7f91?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
 
-					<h2 style="font-size: 30px" class="work-content">Todo.</h2>
-				</a>
+                    <h2 style="font-size: 30px" class="work-content">Todo.</h2>
+                </a>
             </div>
 
-		  </div>
-		  </div>
-	  </div>
-		 
-		<!--──────────────Contact────────────────-->
-	  <div id="contact">
-		  <!--────social media links─────-->
-		   <h3>Contact.<hr></h3>
-		   <p>Feel free to contact me on my social media.</p>
-		    <div class="social-media">
-			  <a href="https://www.instagram.com/programmermecucek/" target="_blank"><i class='fab fa-instagram'></i></a>
-			  <a href="https://twitter.com/hackclubcucek" target="_blank"><i class='fab fa-twitter'></i></a>
-			  <a href="https://github.com/hackclub-cucek" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="https://www.youtube.com/channel/UClkbYSxkA7kATU6JQx00d3g" target="_blank"><i class="fab fa-youtube"></i></a>
-		    </div>
-		  </div>
+          </div>
+          </div>
+      </div>
+         
+        <!--──────────────Contact────────────────-->
+      <div id="contact">
+          <!--────social media links─────-->
+           <h3>Contact.<hr></h3>
+           <p>Feel free to contact me on my social media.</p>
+            <div class="social-media">
+              <a href="https://www.instagram.com/programmermecucek/" target="_blank"><i class='fab fa-instagram'></i></a>
+              <a href="https://twitter.com/hackclubcucek" target="_blank"><i class='fab fa-twitter'></i></a>
+              <a href="https://github.com/hackclub-cucek" target="_blank"><i class='fab fa-github'></i></a>
+              <a href="https://www.youtube.com/channel/UClkbYSxkA7kATU6JQx00d3g" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
 
-	</main>
-	  <footer class="copyright">© 2021 
-		  <a href="https://cucek.hackclub.com/" target="_blank"> Hack Club CUCEK.</a>
-     </footer>	  
+    </main>
+      <footer class="copyright">© 2021 
+          <a href="https://cucek.hackclub.com/" target="_blank"> Hack Club CUCEK.</a>
+     </footer>    
   </div>
-	    <script type="text/javascript">
-  	// header scrolling effect
+        <script type="text/javascript">
+    // header scrolling effect
 $(window).on('scroll', function(){
-	if($(window).scrollTop()){
+    if($(window).scrollTop()){
       $('header').addClass('nav-show');
-		  
-	} 
-	else{
-		$('header').removeClass('nav-show');
-	}
-	   
+          
+    } 
+    else{
+        $('header').removeClass('nav-show');
+    }
+       
 })
 
 //hamburger
 const navSlide = () => {
-	 const hamburger = document.querySelector(".hamburger");
-	 const navbar = document.querySelector(".nav-bar");
-	 const navLinks = document.querySelectorAll(".nav-bar li");
+     const hamburger = document.querySelector(".hamburger");
+     const navbar = document.querySelector(".nav-bar");
+     const navLinks = document.querySelectorAll(".nav-bar li");
 
      hamburger.onclick = () => {
-		
-	 navbar.classList.toggle("nav-active");
-		 
+        
+     navbar.classList.toggle("nav-active");
+         
       //Animation links
-	 navLinks.forEach((link, index) => {
-		if (link.style.animation) {
-			link.style.animation = "";
-		} else {
-			link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+1}s`;
-		   }
-		});
-	  //hamburger animation
-	 hamburger.classList.toggle("toggle");
+     navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = "";
+        } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+1}s`;
+           }
+        });
+      //hamburger animation
+     hamburger.classList.toggle("toggle");
     }
-	 
-	}
+     
+    }
 
 window.onload = () => navSlide();
   </script>
